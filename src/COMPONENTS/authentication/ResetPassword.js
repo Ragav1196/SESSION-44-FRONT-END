@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 import { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import * as yup from "yup";
-import { API_URL } from "./globalConstants";
+import { API_URL } from "../globalConstants";
 import { useHistory, useParams } from "react-router-dom";
 
 export function ResetPassword() {

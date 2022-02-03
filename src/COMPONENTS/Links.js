@@ -1,9 +1,9 @@
 import { Switch, Route } from "react-router-dom";
-import { Register } from "./Register";
-import { Login } from "./Login";
-import { SendMail } from "./SendMail";
+import { Register } from "./authentication/Register";
+import { Login } from "./authentication/Login";
+import { SendMail } from "./authentication/SendMail";
 import { Home } from "./Home";
-import { ResetPassword } from "./ResetPassword";
+import { ResetPassword } from "./authentication/ResetPassword";
 import { ProtectedRoute } from "./ProtectedRoutes";
 
 export function Links() {

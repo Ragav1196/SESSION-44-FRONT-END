@@ -1,14 +1,3 @@
-/* body,
-html {
-  width: 100vw;
-  height: 100vh;
-} */
-
-/* #root {
-  height: 100%;
-  width: 100%;
-} */
-
 .App {
   height: 100vh;
   width: 100vw;
@@ -19,10 +8,6 @@ html {
   height: 100%;
   width: 100%;
 }
-
-/* .mainContainer{
-  width: 100vw;
-} */
 
 /*    LOGIN */
 .login {
@@ -71,6 +56,27 @@ html {
   width: 300px;
 }
 
+.signUp {
+  position: relative;
+  line-height: 50%;
+  padding-top: 20px;
+}
+
+.signUpCntr {
+  height: 40px;
+}
+
+.signUp > span:hover {
+  color: blue;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.signUp > span {
+  position: absolute;
+  margin-left: 5px;
+}
+
 .forgotPwd {
   margin-left: 89px;
   display: flex;
@@ -97,15 +103,9 @@ html {
 }
 
 .tokenExpPopupCntr {
-  /* display: flex;
-  justify-content: space-evenly;
-  align-items: center; */
   background-color: #90b390;
   transition: all 0.6s;
   width: 100%;
-  /* height: 6vh; */
-
-  /* padding: 10px 0px; */
 }
 
 .tokenExpPopup {
@@ -124,10 +124,6 @@ html {
     width: 238px;
     height: 495px;
   }
-
-  /* .login {
-    margin: 40px 0px;
-  } */
 }
 
 @media (max-width: 450px) {
@@ -148,15 +144,19 @@ html {
   color: green;
 }
 
+.regMaincntr > section {
+  height: 100%;
+  width: 100%;
+}
+
 .register {
   background-color: white;
   display: flex;
-  height: -webkit-fill-available;
   width: -webkit-fill-available;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  margin-bottom: 20px;
+  justify-content: space-around;
+  height: 89%;
 }
 
 .register * {
@@ -241,6 +241,10 @@ html {
 }
 
 @media (max-width: 768px) {
+  .register {
+    height: auto;
+  }
+
   .register > article {
     flex-direction: column;
     width: 350px;
@@ -260,7 +264,6 @@ html {
   }
 
   .RegRadioBtn > div {
-    /* margin: 0px 20px; */
     display: flex;
     gap: 0px;
     flex-direction: column;
@@ -292,8 +295,6 @@ html {
   align-items: center;
   background-color: #90b390;
   transition: all 1s;
-  /* padding: 10px; */
-  /* width: 100%; */
 }
 
 .rstPwdPopUp {
@@ -302,11 +303,7 @@ html {
   font-size: 22px;
   font-weight: 100;
   text-align: center;
-  /* line-height: 5vh; */
   width: 90%;
-  /* height: 100%; */
-  /* padding: 10px; */
-  /* overflow: hidden; */
 }
 
 @media (max-width: 520px) {

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { useFormik } from "formik";
 import * as yup from "yup";
-import { API_URL } from "./globalConstants";
+import { API_URL } from "../globalConstants";
 
 export function Register() {
   // TO SHOW THE ERROR MESSAGE WHEN IT OCCURS
@@ -107,7 +107,7 @@ export function Register() {
       <section onClick={() => SetToFalse()}>
         <article className="backButton">
           <Button
-            onClick={() => {              
+            onClick={() => {
               history.goBack();
             }}
             color="warning"
